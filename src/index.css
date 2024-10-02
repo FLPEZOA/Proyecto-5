@@ -1,0 +1,112 @@
+/*estilo para mobile*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+    /* Reduce el tamaño del encabezado en pantallas pequeñas */
+  }
+
+  .container {
+    padding: 1rem;
+    /* Ajusta el padding del contenedor */
+  }
+
+  .btn {
+    width: 100%;
+    /* Botones ocupan el 100% del ancho */
+  }
+}
+
+/*estilo para tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 1280px;
+  /* Máximo ancho */
+  margin: 0 auto;
+  /* Centrado automático */
+  padding: 2rem;
+  /* Espaciado */
+  width: 100%;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* Texto por defecto en blanco */
+  background-color: black;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: white;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #050505;
+
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
