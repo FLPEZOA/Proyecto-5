@@ -95,6 +95,17 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.card img {
+  width: 100%;
+  /* Establecer el ancho a 100% del contenedor */
+  max-width: 250px;
+  /* Definir un ancho máximo para las imágenes */
+  height: auto;
+  /* Mantener la proporción de la imagen */
+  border-radius: 8px;
+  /* Redondear bordes si deseas */
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
