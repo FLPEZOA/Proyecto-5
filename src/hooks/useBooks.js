@@ -10,7 +10,7 @@ const useBooks = () => {
         setLoading(true); // Iniciar estado de carga
         setError(null); // Resetear error antes de buscar
         try {
-            const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+            const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=12`);
             if (!response.ok) {
                 throw new Error('Error en la búsqueda: ' + response.statusText); // Manejar errores de respuesta
             }
